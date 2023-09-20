@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Runner.RunnerTest" time="22.181" tests="24" errors="24" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="E:\ApiTestingEclipse\BDDCucumberFramewok\target\test-classes;E:\ApiTestingEclipse\BDDCucumberFramewok\target\classes;C:\Users\Administrator\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Administrator\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-java\7.10.1\cucumber-java-7.10.1.jar;C:\Users\Administrator\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-junit\7.10.1\cucumber-junit-7.10.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-core\7.10.1\cucumber-core-7.10.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-gherkin\7.10.1\cucumber-gherkin-7.10.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.10.1\cucumber-gherkin-messages-7.10.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\gherkin\25.0.2\gherkin-25.0.2.jar;C:\Users\Administrator\.m2\repository\io\cucumber\messages\19.1.4\messages-19.1.4.jar;C:\Users\Administrator\.m2\repository\io\cucumber\tag-expressions\4.1.0\tag-expressions-4.1.0.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-expressions\16.1.1\cucumber-expressions-16.1.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\datatable\7.10.1\datatable-7.10.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-plugin\7.10.1\cucumber-plugin-7.10.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\docstring\7.10.1\docstring-7.10.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\html-formatter\20.2.0\html-formatter-20.2.0.jar;C:\Users\Administrator\.m2\repository\io\cucumber\ci-environment\9.1.0\ci-environment-9.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\4.7.2\selenium-java-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\4.7.2\selenium-api-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.7.2\selenium-chrome-driver-4.7.2.jar;C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Administrator\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Administrator\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.7.2\selenium-chromium-driver-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-json\4.7.2\selenium-json-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v106\4.7.2\selenium-devtools-v106-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v107\4.7.2\selenium-devtools-v107-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v108\4.7.2\selenium-devtools-v108-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.7.2\selenium-devtools-v85-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.7.2\selenium-edge-driver-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.7.2\selenium-firefox-driver-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-http\4.7.2\selenium-http-4.7.2.jar;C:\Users\Administrator\.m2\repository\dev\failsafe\failsafe\3.3.0\failsafe-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.7.2\selenium-ie-driver-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.7.2\selenium-remote-driver-4.7.2.jar;C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-buffer\4.1.84.Final\netty-buffer-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec-http\4.1.84.Final\netty-codec-http-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec\4.1.84.Final\netty-codec-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-handler\4.1.84.Final\netty-handler-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-common\4.1.84.Final\netty-common-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.84.Final\netty-transport-classes-epoll-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.84.Final\netty-transport-classes-kqueue-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.84.Final\netty-transport-native-epoll-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.84.Final\netty-transport-native-kqueue-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.84.Final\netty-transport-native-unix-common-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport\4.1.84.Final\netty-transport-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-resolver\4.1.84.Final\netty-resolver-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api\1.19.0\opentelemetry-api-1.19.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-context\1.19.0\opentelemetry-context-1.19.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.19.0\opentelemetry-exporter-logging-1.19.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.19.0\opentelemetry-sdk-metrics-1.19.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.19.0-alpha\opentelemetry-sdk-logs-1.19.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.19.0-alpha\opentelemetry-api-logs-1.19.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.19.0\opentelemetry-sdk-common-1.19.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.19.0\opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.19.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-exporter-common\1.19.0\opentelemetry-exporter-common-1.19.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.19.0\opentelemetry-sdk-trace-1.19.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.19.0\opentelemetry-sdk-1.19.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.19.0-alpha\opentelemetry-semconv-1.19.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Administrator\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Administrator\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Administrator\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.7.2\selenium-manager-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.7.2\selenium-safari-driver-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\4.7.2\selenium-support-4.7.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Users\Administrator\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\ADMINI~1\AppData\Local\Temp\surefire9062695034219800179\surefirebooter15460927147353707726.jar C:\Users\Administrator\AppData\Local\Temp\surefire9062695034219800179 2023-09-20T17-40-40_425-jvmRun1 surefire9132671312336620685tmp surefire_017448335439055509908tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="E:\ApiTestingEclipse\BDDCucumberFramewok\target\test-classes;E:\ApiTestingEclipse\BDDCucumberFramewok\target\classes;C:\Users\Administrator\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Administrator\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-java\7.10.1\cucumber-java-7.10.1.jar;C:\Users\Administrator\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-junit\7.10.1\cucumber-junit-7.10.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-core\7.10.1\cucumber-core-7.10.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-gherkin\7.10.1\cucumber-gherkin-7.10.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.10.1\cucumber-gherkin-messages-7.10.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\gherkin\25.0.2\gherkin-25.0.2.jar;C:\Users\Administrator\.m2\repository\io\cucumber\messages\19.1.4\messages-19.1.4.jar;C:\Users\Administrator\.m2\repository\io\cucumber\tag-expressions\4.1.0\tag-expressions-4.1.0.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-expressions\16.1.1\cucumber-expressions-16.1.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\datatable\7.10.1\datatable-7.10.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\cucumber-plugin\7.10.1\cucumber-plugin-7.10.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\docstring\7.10.1\docstring-7.10.1.jar;C:\Users\Administrator\.m2\repository\io\cucumber\html-formatter\20.2.0\html-formatter-20.2.0.jar;C:\Users\Administrator\.m2\repository\io\cucumber\ci-environment\9.1.0\ci-environment-9.1.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-java\4.7.2\selenium-java-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-api\4.7.2\selenium-api-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.7.2\selenium-chrome-driver-4.7.2.jar;C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\Administrator\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\Administrator\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Administrator\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Administrator\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Administrator\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\Administrator\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\Administrator\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.7.2\selenium-chromium-driver-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-json\4.7.2\selenium-json-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v106\4.7.2\selenium-devtools-v106-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v107\4.7.2\selenium-devtools-v107-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v108\4.7.2\selenium-devtools-v108-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.7.2\selenium-devtools-v85-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.7.2\selenium-edge-driver-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.7.2\selenium-firefox-driver-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-http\4.7.2\selenium-http-4.7.2.jar;C:\Users\Administrator\.m2\repository\dev\failsafe\failsafe\3.3.0\failsafe-3.3.0.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.7.2\selenium-ie-driver-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.7.2\selenium-remote-driver-4.7.2.jar;C:\Users\Administrator\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-buffer\4.1.84.Final\netty-buffer-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec-http\4.1.84.Final\netty-codec-http-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec\4.1.84.Final\netty-codec-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-handler\4.1.84.Final\netty-handler-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-common\4.1.84.Final\netty-common-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.84.Final\netty-transport-classes-epoll-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.84.Final\netty-transport-classes-kqueue-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.84.Final\netty-transport-native-epoll-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.84.Final\netty-transport-native-kqueue-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.84.Final\netty-transport-native-unix-common-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport\4.1.84.Final\netty-transport-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-resolver\4.1.84.Final\netty-resolver-4.1.84.Final.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api\1.19.0\opentelemetry-api-1.19.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-context\1.19.0\opentelemetry-context-1.19.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.19.0\opentelemetry-exporter-logging-1.19.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.19.0\opentelemetry-sdk-metrics-1.19.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.19.0-alpha\opentelemetry-sdk-logs-1.19.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.19.0-alpha\opentelemetry-api-logs-1.19.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.19.0\opentelemetry-sdk-common-1.19.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.19.0\opentelemetry-sdk-extension-autoconfigure-spi-1.19.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.19.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.19.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-exporter-common\1.19.0\opentelemetry-exporter-common-1.19.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.19.0\opentelemetry-sdk-trace-1.19.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.19.0\opentelemetry-sdk-1.19.0.jar;C:\Users\Administrator\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.19.0-alpha\opentelemetry-semconv-1.19.0-alpha.jar;C:\Users\Administrator\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\Administrator\.m2\repository\net\bytebuddy\byte-buddy\1.12.18\byte-buddy-1.12.18.jar;C:\Users\Administrator\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\Administrator\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\Administrator\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\Administrator\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Administrator\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Administrator\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\Administrator\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.7.2\selenium-manager-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.7.2\selenium-safari-driver-4.7.2.jar;C:\Users\Administrator\.m2\repository\org\seleniumhq\selenium\selenium-support\4.7.2\selenium-support-4.7.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="C:\Users\Administrator\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre"/>
+    <property name="file.separator" value="\"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="E:\ApiTestingEclipse\BDDCucumberFramewok"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\ADMINI~1\AppData\Local\Temp\surefire9062695034219800179\surefirebooter15460927147353707726.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.6+10"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.6+10"/>
+    <property name="localRepository" value="C:\Users\Administrator\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.6"/>
+    <property name="user.dir" value="E:\ApiTestingEclipse\BDDCucumberFramewok"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Users\Administrator\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/Administrator/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin/server;C:/Users/Administrator/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\PROGRA~1\Java\jdk1.8.0_202\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-11\bin;E:\Maven software\apache-maven-3.9.4\bin;C:\Program Files\Git\cmd;E:\Maven software\apache-maven-3.9.4\bin;E:\Maven software\apache-maven-3.9.4;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\OneDrive\Desktop;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.6+10"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="Login with valid credentials" classname="Login Functionality" time="2.139">
+    <error message="The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+</error>
+    <system-out><![CDATA[
+Scenario Outline: Login with valid credentials     &amp#27;[90m# src/test/resources/Features/Login.feature:12&amp#27;[0m
+      &amp#27;[31mjava.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:41)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:285)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:146)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
+	at Factory.DriverFactory.initializeBrowser(DriverFactory.java:22)
+	at Hooks.MyHooks.setUp(MyHooks.java:26)
+&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mUser navigates to login Page&amp#27;[0m               &amp#27;[90m# StepDefinitions.Login.User_navigates_to_login_Page()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser enters valid username &amp#27;[0m&amp#27;[36m&amp#27;[1marpita@gmail.com&amp#27;[0m &amp#27;[90m# StepDefinitions.Login.user_enters_valid_username(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser enters valid password &amp#27;[0m&amp#27;[36m&amp#27;[1mArpita@1998&amp#27;[0m       &amp#27;[90m# StepDefinitions.Login.user_enters_valid_password(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser clicks on Login button&amp#27;[0m                  &amp#27;[90m# StepDefinitions.Login.user_clicks_on_login_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser should login successfully.&amp#27;[0m             &amp#27;[90m# StepDefinitions.Login.Then_User_should_login_successfully()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+	at Hooks.MyHooks.tearDown(MyHooks.java:37)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 20, 2023 5:40:46 PM org.openqa.selenium.remote.service.DriverService findExecutable
+WARNING: Unable to obtain driver using Selenium Manager: Unsuccessful command executed: [C:\Users\ADMINI~1\AppData\Local\Temp\selenium-manager130513421390010016021926117219022720\selenium-manager.exe, --driver, chromedriver]
+ERROR	Wrong browser/driver version
+
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+]]></system-err>
+  </testcase>
+  <testcase name="Login with valid credentials" classname="Login Functionality" time="2.141">
+    <error message="Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+</error>
+  </testcase>
+  <testcase name="Login with Invalid credentials" classname="Login Functionality" time="1.37">
+    <error message="The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+</error>
+    <system-out><![CDATA[
+Scenario: Login with Invalid credentials      &amp#27;[90m# src/test/resources/Features/Login.feature:14&amp#27;[0m
+      &amp#27;[31mjava.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:41)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:285)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:146)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
+	at Factory.DriverFactory.initializeBrowser(DriverFactory.java:22)
+	at Hooks.MyHooks.setUp(MyHooks.java:26)
+&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mUser navigates to login Page&amp#27;[0m          &amp#27;[90m# StepDefinitions.Login.User_navigates_to_login_Page()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser enters invalid username&amp#27;[0m           &amp#27;[90m# StepDefinitions.Login.user_enters_invalid_username()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser enters invalid password &amp#27;[0m&amp#27;[36m&amp#27;[1m"test123"&amp#27;[0m  &amp#27;[90m# StepDefinitions.Login.user_enters_invalid_password(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser clicks on Login button&amp#27;[0m             &amp#27;[90m# StepDefinitions.Login.user_clicks_on_login_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser should get proper warning message&amp#27;[0m &amp#27;[90m# StepDefinitions.Login.user_should_get_proper_warning_message()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+	at Hooks.MyHooks.tearDown(MyHooks.java:37)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 20, 2023 5:40:47 PM org.openqa.selenium.remote.service.DriverService findExecutable
+WARNING: Unable to obtain driver using Selenium Manager: Unsuccessful command executed: [C:\Users\ADMINI~1\AppData\Local\Temp\selenium-manager130513421390010016021926117219022720\selenium-manager.exe, --driver, chromedriver]
+ERROR	Wrong browser/driver version
+
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+]]></system-err>
+  </testcase>
+  <testcase name="Login with Invalid credentials" classname="Login Functionality" time="1.372">
+    <error message="Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+</error>
+  </testcase>
+  <testcase name="Login with valid email and Invalid password" classname="Login Functionality" time="1.444">
+    <error message="The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+</error>
+    <system-out><![CDATA[
+Scenario: Login with valid email and Invalid password &amp#27;[90m# src/test/resources/Features/Login.feature:22&amp#27;[0m
+      &amp#27;[31mjava.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:41)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:285)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:146)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
+	at Factory.DriverFactory.initializeBrowser(DriverFactory.java:22)
+	at Hooks.MyHooks.setUp(MyHooks.java:26)
+&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mUser navigates to login Page&amp#27;[0m                  &amp#27;[90m# StepDefinitions.Login.User_navigates_to_login_Page()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser enters valid username &amp#27;[0m&amp#27;[36m&amp#27;[1m"arpita@gmail.com"&amp#27;[0m  &amp#27;[90m# StepDefinitions.Login.user_enters_valid_username(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser enters invalid password &amp#27;[0m&amp#27;[36m&amp#27;[1m"test123"&amp#27;[0m          &amp#27;[90m# StepDefinitions.Login.user_enters_invalid_password(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser clicks on Login button&amp#27;[0m                     &amp#27;[90m# StepDefinitions.Login.user_clicks_on_login_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser should get proper warning message&amp#27;[0m         &amp#27;[90m# StepDefinitions.Login.user_should_get_proper_warning_message()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+	at Hooks.MyHooks.tearDown(MyHooks.java:37)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 20, 2023 5:40:49 PM org.openqa.selenium.remote.service.DriverService findExecutable
+WARNING: Unable to obtain driver using Selenium Manager: Unsuccessful command executed: [C:\Users\ADMINI~1\AppData\Local\Temp\selenium-manager130513421390010016021926117219022720\selenium-manager.exe, --driver, chromedriver]
+ERROR	Wrong browser/driver version
+
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+]]></system-err>
+  </testcase>
+  <testcase name="Login with valid email and Invalid password" classname="Login Functionality" time="1.445">
+    <error message="Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+</error>
+  </testcase>
+  <testcase name="Login with invalid email and valid password" classname="Login Functionality" time="2.326">
+    <error message="The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+</error>
+    <system-out><![CDATA[
+Scenario: Login with invalid email and valid password &amp#27;[90m# src/test/resources/Features/Login.feature:30&amp#27;[0m
+      &amp#27;[31mjava.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:41)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:285)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:146)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
+	at Factory.DriverFactory.initializeBrowser(DriverFactory.java:22)
+	at Hooks.MyHooks.setUp(MyHooks.java:26)
+&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mUser navigates to login Page&amp#27;[0m                  &amp#27;[90m# StepDefinitions.Login.User_navigates_to_login_Page()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser enters invalid username&amp#27;[0m                   &amp#27;[90m# StepDefinitions.Login.user_enters_invalid_username()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser enters valid password &amp#27;[0m&amp#27;[36m&amp#27;[1m"Arpita@1998"&amp#27;[0m        &amp#27;[90m# StepDefinitions.Login.user_enters_valid_password(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser clicks on Login button&amp#27;[0m                     &amp#27;[90m# StepDefinitions.Login.user_clicks_on_login_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser should get proper warning message&amp#27;[0m         &amp#27;[90m# StepDefinitions.Login.user_should_get_proper_warning_message()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+	at Hooks.MyHooks.tearDown(MyHooks.java:37)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 20, 2023 5:40:51 PM org.openqa.selenium.remote.service.DriverService findExecutable
+WARNING: Unable to obtain driver using Selenium Manager: Unsuccessful command executed: [C:\Users\ADMINI~1\AppData\Local\Temp\selenium-manager130513421390010016021926117219022720\selenium-manager.exe, --driver, chromedriver]
+ERROR	Wrong browser/driver version
+
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+]]></system-err>
+  </testcase>
+  <testcase name="Login with invalid email and valid password" classname="Login Functionality" time="2.326">
+    <error message="Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+</error>
+  </testcase>
+  <testcase name="Login without entering username and paaword" classname="Login Functionality" time="2.217">
+    <error message="The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+</error>
+    <system-out><![CDATA[
+Scenario: Login without entering username and paaword &amp#27;[90m# src/test/resources/Features/Login.feature:38&amp#27;[0m
+      &amp#27;[31mjava.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:41)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:285)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:146)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
+	at Factory.DriverFactory.initializeBrowser(DriverFactory.java:22)
+	at Hooks.MyHooks.setUp(MyHooks.java:26)
+&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mUser navigates to login Page&amp#27;[0m                  &amp#27;[90m# StepDefinitions.Login.User_navigates_to_login_Page()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser clicks on Login button&amp#27;[0m                    &amp#27;[90m# StepDefinitions.Login.user_clicks_on_login_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser should get proper warning message&amp#27;[0m         &amp#27;[90m# StepDefinitions.Login.user_should_get_proper_warning_message()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+	at Hooks.MyHooks.tearDown(MyHooks.java:37)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 20, 2023 5:40:53 PM org.openqa.selenium.remote.service.DriverService findExecutable
+WARNING: Unable to obtain driver using Selenium Manager: Unsuccessful command executed: [C:\Users\ADMINI~1\AppData\Local\Temp\selenium-manager130513421390010016021926117219022720\selenium-manager.exe, --driver, chromedriver]
+ERROR	Wrong browser/driver version
+
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+]]></system-err>
+  </testcase>
+  <testcase name="Login without entering username and paaword" classname="Login Functionality" time="2.218">
+    <error message="Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+</error>
+  </testcase>
+  <testcase name="User creates account with mandatory fields" classname="Register Functionality" time="0.923">
+    <error message="The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+</error>
+    <system-out><![CDATA[
+Scenario: User creates account with mandatory fields &amp#27;[90m# src/test/resources/Features/Register.feature:3&amp#27;[0m
+      &amp#27;[31mjava.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:41)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:285)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:146)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
+	at Factory.DriverFactory.initializeBrowser(DriverFactory.java:22)
+	at Hooks.MyHooks.setUp(MyHooks.java:26)
+&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mUser navigates to Create Account page&amp#27;[0m        &amp#27;[90m# StepDefinitions.Register.user_navigates_to_create_account_page()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser enters below fields&amp#27;[0m                      &amp#27;[90m# StepDefinitions.Register.user_enters_below_fields(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | firstName | akash                |
+    | lastName  | patil                |
+    | email     | arpitat123@gmail.com |
+    | telephone | 1234567              |
+    | password  | 12345tre             |
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser clicks privacy policy checkbox&amp#27;[0m            &amp#27;[90m# StepDefinitions.Register.user_clicks_privacy_policy_checkbox()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser clicks on continue button&amp#27;[0m                 &amp#27;[90m# StepDefinitions.Register.user_clicks_on_continue_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser account should created successfully&amp#27;[0m      &amp#27;[90m# StepDefinitions.Register.user_account_should_created_successfully()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+	at Hooks.MyHooks.tearDown(MyHooks.java:37)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 20, 2023 5:40:54 PM org.openqa.selenium.remote.service.DriverService findExecutable
+WARNING: Unable to obtain driver using Selenium Manager: Unsuccessful command executed: [C:\Users\ADMINI~1\AppData\Local\Temp\selenium-manager130513421390010016021926117219022720\selenium-manager.exe, --driver, chromedriver]
+ERROR	Wrong browser/driver version
+
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+]]></system-err>
+  </testcase>
+  <testcase name="User creates account with mandatory fields" classname="Register Functionality" time="0.923">
+    <error message="Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+</error>
+  </testcase>
+  <testcase name="User creates account with all fields" classname="Register Functionality" time="1.098">
+    <error message="The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+</error>
+    <system-out><![CDATA[
+Scenario: User creates account with all fields  &amp#27;[90m# src/test/resources/Features/Register.feature:16&amp#27;[0m
+      &amp#27;[31mjava.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:41)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:285)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:146)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
+	at Factory.DriverFactory.initializeBrowser(DriverFactory.java:22)
+	at Hooks.MyHooks.setUp(MyHooks.java:26)
+&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mUser navigates to Create Account page&amp#27;[0m   &amp#27;[90m# StepDefinitions.Register.user_navigates_to_create_account_page()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser enters below fields&amp#27;[0m                 &amp#27;[90m# StepDefinitions.Register.user_enters_below_fields(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | firstName | akash                |
+    | lastName  | patil                |
+    | email     | arpitat123@gmail.com |
+    | telephone | 1234567              |
+    | password  | 12345tre             |
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser selects yes for newsettler&amp#27;[0m           &amp#27;[90m# StepDefinitions.Register.user_selects_yes_for_newsettler()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser clicks privacy policy checkbox&amp#27;[0m       &amp#27;[90m# StepDefinitions.Register.user_clicks_privacy_policy_checkbox()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser clicks on continue button&amp#27;[0m            &amp#27;[90m# StepDefinitions.Register.user_clicks_on_continue_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser account should created successfully&amp#27;[0m &amp#27;[90m# StepDefinitions.Register.user_account_should_created_successfully()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+	at Hooks.MyHooks.tearDown(MyHooks.java:37)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 20, 2023 5:40:55 PM org.openqa.selenium.remote.service.DriverService findExecutable
+WARNING: Unable to obtain driver using Selenium Manager: Unsuccessful command executed: [C:\Users\ADMINI~1\AppData\Local\Temp\selenium-manager130513421390010016021926117219022720\selenium-manager.exe, --driver, chromedriver]
+ERROR	Wrong browser/driver version
+
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+]]></system-err>
+  </testcase>
+  <testcase name="User creates account with all fields" classname="Register Functionality" time="1.099">
+    <error message="Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+</error>
+  </testcase>
+  <testcase name="User creates duplicate account using duplicate email" classname="Register Functionality" time="1.159">
+    <error message="The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+</error>
+    <system-out><![CDATA[
+Scenario: User creates duplicate account using duplicate email &amp#27;[90m# src/test/resources/Features/Register.feature:30&amp#27;[0m
+      &amp#27;[31mjava.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:41)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:285)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:146)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
+	at Factory.DriverFactory.initializeBrowser(DriverFactory.java:22)
+	at Hooks.MyHooks.setUp(MyHooks.java:26)
+&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mUser navigates to Create Account page&amp#27;[0m                  &amp#27;[90m# StepDefinitions.Register.user_navigates_to_create_account_page()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser enters below fields with duplicate email&amp#27;[0m           &amp#27;[90m# StepDefinitions.Register.user_enters_below_fields_with_duplicate_email(io.cucumber.datatable.DataTable)&amp#27;[0m
+    | firstName | akash            |
+    | lastName  | patil            |
+    | email     | arpita@gmail.com |
+    | telephone | 1234567          |
+    | password  | 1234568          |
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser clicks privacy policy checkbox&amp#27;[0m                      &amp#27;[90m# StepDefinitions.Register.user_clicks_privacy_policy_checkbox()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser clicks on continue button&amp#27;[0m                           &amp#27;[90m# StepDefinitions.Register.user_clicks_on_continue_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser should get duplicate email warning message&amp#27;[0m         &amp#27;[90m# StepDefinitions.Register.user_should_get_duplicate_email_warning_message()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+	at Hooks.MyHooks.tearDown(MyHooks.java:37)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 20, 2023 5:40:56 PM org.openqa.selenium.remote.service.DriverService findExecutable
+WARNING: Unable to obtain driver using Selenium Manager: Unsuccessful command executed: [C:\Users\ADMINI~1\AppData\Local\Temp\selenium-manager130513421390010016021926117219022720\selenium-manager.exe, --driver, chromedriver]
+ERROR	Wrong browser/driver version
+
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+]]></system-err>
+  </testcase>
+  <testcase name="User creates duplicate account using duplicate email" classname="Register Functionality" time="1.159">
+    <error message="Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+</error>
+  </testcase>
+  <testcase name="User creates  account without entering fields" classname="Register Functionality" time="1.186">
+    <error message="The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+</error>
+    <system-out><![CDATA[
+Scenario: User creates  account without entering fields           &amp#27;[90m# src/test/resources/Features/Register.feature:43&amp#27;[0m
+      &amp#27;[31mjava.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:41)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:285)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:146)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
+	at Factory.DriverFactory.initializeBrowser(DriverFactory.java:22)
+	at Hooks.MyHooks.setUp(MyHooks.java:26)
+&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mUser navigates to Create Account page&amp#27;[0m                     &amp#27;[90m# StepDefinitions.Register.user_navigates_to_create_account_page()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser clicks on continue button&amp#27;[0m                             &amp#27;[90m# StepDefinitions.Register.user_clicks_on_continue_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser should get warning message for every mandatory fields&amp#27;[0m &amp#27;[90m# StepDefinitions.Register.user_should_get_warning_message_for_every_mandatory_fields()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+	at Hooks.MyHooks.tearDown(MyHooks.java:37)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 20, 2023 5:40:58 PM org.openqa.selenium.remote.service.DriverService findExecutable
+WARNING: Unable to obtain driver using Selenium Manager: Unsuccessful command executed: [C:\Users\ADMINI~1\AppData\Local\Temp\selenium-manager130513421390010016021926117219022720\selenium-manager.exe, --driver, chromedriver]
+ERROR	Wrong browser/driver version
+
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+]]></system-err>
+  </testcase>
+  <testcase name="User creates  account without entering fields" classname="Register Functionality" time="1.188">
+    <error message="Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+</error>
+  </testcase>
+  <testcase name="User searches for valid product" classname="Search Functionality" time="1.14">
+    <error message="The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+</error>
+    <system-out><![CDATA[
+Scenario: User searches for valid product                        &amp#27;[90m# src/test/resources/Features/Search.feature:3&amp#27;[0m
+      &amp#27;[31mjava.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:41)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:285)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:146)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
+	at Factory.DriverFactory.initializeBrowser(DriverFactory.java:22)
+	at Hooks.MyHooks.setUp(MyHooks.java:26)
+&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mUser opens the application&amp#27;[0m                               &amp#27;[90m# StepDefinitions.Search.user_opens_the_application()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser enters valid product &amp#27;[0m&amp#27;[36m&amp#27;[1m"HP"&amp#27;[0m&amp#27;[36m into search field&amp#27;[0m          &amp#27;[90m# StepDefinitions.Search.user_enters_valid_product_into_search_field(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser clicks on search button&amp#27;[0m                               &amp#27;[90m# StepDefinitions.Search.user_clicks_on_search_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser should get valid product displayed in search results&amp#27;[0m &amp#27;[90m# StepDefinitions.Search.user_should_get_valid_product_displayed_in_search_results()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+	at Hooks.MyHooks.tearDown(MyHooks.java:37)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 20, 2023 5:40:59 PM org.openqa.selenium.remote.service.DriverService findExecutable
+WARNING: Unable to obtain driver using Selenium Manager: Unsuccessful command executed: [C:\Users\ADMINI~1\AppData\Local\Temp\selenium-manager130513421390010016021926117219022720\selenium-manager.exe, --driver, chromedriver]
+ERROR	Wrong browser/driver version
+
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+]]></system-err>
+  </testcase>
+  <testcase name="User searches for valid product" classname="Search Functionality" time="1.141">
+    <error message="Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+</error>
+  </testcase>
+  <testcase name="User searches for invalid product" classname="Search Functionality" time="0.935">
+    <error message="The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+</error>
+    <system-out><![CDATA[
+Scenario: User searches for invalid product                  &amp#27;[90m# src/test/resources/Features/Search.feature:10&amp#27;[0m
+      &amp#27;[31mjava.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:41)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:285)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:146)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
+	at Factory.DriverFactory.initializeBrowser(DriverFactory.java:22)
+	at Hooks.MyHooks.setUp(MyHooks.java:26)
+&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mUser opens the application&amp#27;[0m                           &amp#27;[90m# StepDefinitions.Search.user_opens_the_application()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser enters invalid product &amp#27;[0m&amp#27;[36m&amp#27;[1m"Honda"&amp#27;[0m&amp#27;[36m into search field&amp#27;[0m &amp#27;[90m# StepDefinitions.Search.user_enters_invalid_product_into_search_field(java.lang.String)&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser clicks on search button&amp#27;[0m                           &amp#27;[90m# StepDefinitions.Search.user_clicks_on_search_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser should get No product warning message&amp#27;[0m            &amp#27;[90m# StepDefinitions.Search.user_should_get_no_product_warning_message()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+	at Hooks.MyHooks.tearDown(MyHooks.java:37)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 20, 2023 5:41:00 PM org.openqa.selenium.remote.service.DriverService findExecutable
+WARNING: Unable to obtain driver using Selenium Manager: Unsuccessful command executed: [C:\Users\ADMINI~1\AppData\Local\Temp\selenium-manager130513421390010016021926117219022720\selenium-manager.exe, --driver, chromedriver]
+ERROR	Wrong browser/driver version
+
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+]]></system-err>
+  </testcase>
+  <testcase name="User searches for invalid product" classname="Search Functionality" time="0.937">
+    <error message="Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+</error>
+  </testcase>
+  <testcase name="User searches for product without entering any product" classname="Search Functionality" time="1.557">
+    <error message="The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads" type="java.lang.IllegalStateException">java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+</error>
+    <system-out><![CDATA[
+Scenario: User searches for product without entering any product &amp#27;[90m# src/test/resources/Features/Search.feature:17&amp#27;[0m
+      &amp#27;[31mjava.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:314)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:149)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:41)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:285)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:456)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:146)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:50)
+	at Factory.DriverFactory.initializeBrowser(DriverFactory.java:22)
+	at Hooks.MyHooks.setUp(MyHooks.java:26)
+&amp#27;[0m
+  &amp#27;[36mGiven &amp#27;[0m&amp#27;[36mUser opens the application&amp#27;[0m                               &amp#27;[90m# StepDefinitions.Search.user_opens_the_application()&amp#27;[0m
+  &amp#27;[36mWhen &amp#27;[0m&amp#27;[36mUser clicks on search button&amp#27;[0m                              &amp#27;[90m# StepDefinitions.Search.user_clicks_on_search_button()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mUser should get No product warning message&amp#27;[0m                &amp#27;[90m# StepDefinitions.Search.user_should_get_no_product_warning_message()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+	at Hooks.MyHooks.tearDown(MyHooks.java:37)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[Sep 20, 2023 5:41:01 PM org.openqa.selenium.remote.service.DriverService findExecutable
+WARNING: Unable to obtain driver using Selenium Manager: Unsuccessful command executed: [C:\Users\ADMINI~1\AppData\Local\Temp\selenium-manager130513421390010016021926117219022720\selenium-manager.exe, --driver, chromedriver]
+ERROR	Wrong browser/driver version
+
+Build info: version: '4.7.2', revision: '4d4020c3b7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: ChromeDriver
+]]></system-err>
+  </testcase>
+  <testcase name="User searches for product without entering any product" classname="Search Functionality" time="1.558">
+    <error message="Cannot invoke &quot;org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)&quot; because &quot;this.driver&quot; is null" type="java.lang.NullPointerException">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+</error>
+  </testcase>
+</testsuite>

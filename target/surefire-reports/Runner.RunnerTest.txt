@@ -1,0 +1,76 @@
+-------------------------------------------------------------------------------
+Test set: Runner.RunnerTest
+-------------------------------------------------------------------------------
+Tests run: 24, Failures: 0, Errors: 24, Skipped: 0, Time elapsed: 22.181 s <<< FAILURE! - in Runner.RunnerTest
+Login with valid credentials(Login Functionality)  Time elapsed: 2.139 s  <<< ERROR!
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+
+Login with valid credentials(Login Functionality)  Time elapsed: 2.141 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+Login with Invalid credentials(Login Functionality)  Time elapsed: 1.37 s  <<< ERROR!
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+
+Login with Invalid credentials(Login Functionality)  Time elapsed: 1.372 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+Login with valid email and Invalid password(Login Functionality)  Time elapsed: 1.444 s  <<< ERROR!
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+
+Login with valid email and Invalid password(Login Functionality)  Time elapsed: 1.445 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+Login with invalid email and valid password(Login Functionality)  Time elapsed: 2.326 s  <<< ERROR!
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+
+Login with invalid email and valid password(Login Functionality)  Time elapsed: 2.326 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+Login without entering username and paaword(Login Functionality)  Time elapsed: 2.217 s  <<< ERROR!
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+
+Login without entering username and paaword(Login Functionality)  Time elapsed: 2.218 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+User creates account with mandatory fields(Register Functionality)  Time elapsed: 0.923 s  <<< ERROR!
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+
+User creates account with mandatory fields(Register Functionality)  Time elapsed: 0.923 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+User creates account with all fields(Register Functionality)  Time elapsed: 1.098 s  <<< ERROR!
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+
+User creates account with all fields(Register Functionality)  Time elapsed: 1.099 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+User creates duplicate account using duplicate email(Register Functionality)  Time elapsed: 1.159 s  <<< ERROR!
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+
+User creates duplicate account using duplicate email(Register Functionality)  Time elapsed: 1.159 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+User creates  account without entering fields(Register Functionality)  Time elapsed: 1.186 s  <<< ERROR!
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+
+User creates  account without entering fields(Register Functionality)  Time elapsed: 1.188 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+User searches for valid product(Search Functionality)  Time elapsed: 1.14 s  <<< ERROR!
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+
+User searches for valid product(Search Functionality)  Time elapsed: 1.141 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+User searches for invalid product(Search Functionality)  Time elapsed: 0.935 s  <<< ERROR!
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+
+User searches for invalid product(Search Functionality)  Time elapsed: 0.937 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
+User searches for product without entering any product(Search Functionality)  Time elapsed: 1.557 s  <<< ERROR!
+java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://chromedriver.chromium.org/. The latest version can be downloaded from https://chromedriver.chromium.org/downloads
+
+User searches for product without entering any product(Search Functionality)  Time elapsed: 1.558 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "this.driver" is null
+
